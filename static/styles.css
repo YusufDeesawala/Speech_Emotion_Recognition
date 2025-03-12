@@ -1,0 +1,130 @@
+/* General Body Style */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #2e003e, #000000); /* Dark Purple to Black Gradient */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden; /* Prevents any overflow caused by particles */
+}
+
+/* Ensure particles.js works as background */
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Keeps particles behind other content */
+}
+
+/* Main Heading Style */
+h1 {
+    font-size: 2.5rem;
+    color: #fff; /* White text */
+    margin-bottom: 1.5rem;
+    z-index: 1;
+}
+
+/* Buttons Styling */
+button {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* Soft shadow */
+    z-index: 1;
+}
+
+/* Start Recording Button */
+#startBtn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+#startBtn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Stop Recording Button */
+#stopBtn {
+    background-color: #ff4d4d; /* Red for Stop */
+    color: white;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#stopBtn:hover {
+    background-color: #ff7f7f;
+    transform: scale(1.05);
+}
+
+/* Audio player */
+audio {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+/* Form Styling */
+form {
+    margin-top: 20px;
+    display: block;  /* Ensure form is always visible */
+    text-align: center; /* Center align form elements */
+    z-index: 1;
+}
+
+/* File input styling */
+input[type="file"] {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+}
+
+/* File Name Label */
+label#fileNameLabel {
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Submit Button Styling */
+form button {
+    background-color: #008CBA; /* Blue for Submit */
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #007bb5;
+}
+
+/* Result Message */
+h2 {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    color: #4CAF50;
+    font-weight: bold;
+    z-index: 1;
+}
+
+/* Container for buttons and controls */
+#controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    z-index: 1;
+}
